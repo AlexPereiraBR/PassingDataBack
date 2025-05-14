@@ -55,13 +55,6 @@
 
 ---
 
-## 🚀 Возможные улучшения
-
-* Добавить `UILabel` с hex-кодом цвета.
-* Отделить второй экран на 2 (`SecondVCClosure`, `SecondVCDelegate`) для более чистой структуры.
-
----
-
 # 📱 PassingDataBack (English Version)
 
 ## 🧠 Project Goal
@@ -117,9 +110,3 @@ Demonstrate **two correct ways to pass data back** from a second screen (`Second
 * Both data passing methods follow **clean architecture principles**.
 * Entire app is code-based (no storyboard).
 
----
-
-## 🚀 Possible Improvements
-
-* Add a `UILabel` to display the current color’s hex code.
-* Split the second screen into two components (`SecondVCClosure`, `SecondVCDelegate`) for separation of concerns.
