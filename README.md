@@ -1,6 +1,32 @@
 # 📱 PassingDataBack
 
-## 🧠 Цель проекта
+Этот проект был создан с учебной целью — для практики и демонстрации корректных способов обратной передачи данных между экранами (ViewController’ами) в iOS, без нарушения архитектурных принципов UIKit.
+
+⸻
+
+🎯 Цель проекта
+
+Научиться правильно возвращать данные от второго экрана к первому в рамках iOS-приложения, избегая прямых связей между контроллерами и используя лучшие практики:
+closure и delegate.
+
+⸻
+
+Что конкретно отрабатывается:
+	•	Понимание навигационного стека (UINavigationController)
+	•	Умение реализовать обратную связь от дочернего к родительскому экрану
+	•	Применение двух основных паттернов передачи данных:
+	•	Замыкание (closure)
+	•	Протокол и делегат (delegate pattern)
+	•	Избежание антипаттерна: childVC.firstVC = parentVC
+(жёсткая связь, нарушающая SOLID и принцип низкой связанности)
+
+⸻
+
+Если кратко:
+
+Этот проект — упражнение по построению обратной связи между экранами с соблюдением архитектурной чистоты и практикой ключевых iOS-паттернов.
+
+## 🧠 Основная функия
 
 Демонстрация **двух корректных способов обратной передачи данных** от второго экрана (`SecondViewController`) к первому (`FirstViewController`) в UIKit-проекте:
 
@@ -57,7 +83,28 @@
 
 # 📱 PassingDataBack (English Version)
 
-## 🧠 Project Goal
+🎯 Project Purpose
+
+The goal of this project is to practice and demonstrate correct ways to pass data back from one screen (ViewController) to another in iOS, while respecting UIKit architectural principles and avoiding tight coupling between view controllers.
+
+⸻
+
+Specifically, this project focuses on:
+	•	Understanding the navigation stack (UINavigationController)
+	•	Learning how to pass data back from a child to a parent view controller
+	•	Implementing the two main patterns of backward communication:
+	•	Closure-based callback
+	•	Protocol and delegate
+	•	Avoiding the anti-pattern:
+childVC.parentVC = parentVC
+which leads to tight coupling and breaks SOLID principles.
+
+⸻
+
+In short:
+This project is an exercise in building backward communication between view controllers using clean architecture and practicing key iOS patterns.
+
+## 🧠 Main function
 
 Demonstrate **two correct ways to pass data back** from a second screen (`SecondViewController`) to the first (`FirstViewController`) in a UIKit project:
 
